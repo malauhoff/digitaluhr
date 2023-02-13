@@ -16,9 +16,7 @@ export class DigitNumberComponent {
     this._limit = value;
   }
 
-  DigitNumberComponent(limit: number) {
-    this._limit = limit;
-  }
+  
   public setCounter(value: number) {
     this.counter = value;
   }

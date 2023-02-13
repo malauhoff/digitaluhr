@@ -9,7 +9,6 @@ import { DigitNumberComponent } from './digit-number/digit-number.component';
   declarations: [
     AppComponent,
     ClockfaceComponent,
-    DigitNumberComponent
   ],
   imports: [
     BrowserModule

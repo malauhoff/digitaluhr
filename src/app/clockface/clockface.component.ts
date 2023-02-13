@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DigitNumberComponent } from '../digit-number/digit-number.component';
 
 @Component({
   selector: 'app-clockface',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./clockface.component.css']
 })
 export class ClockfaceComponent {
-    hours = "17";
+    hours: DigitNumberComponent = new DigitNumberComponent();
+    minutes: DigitNumberComponent = new DigitNumberComponent();
+    seconds: DigitNumberComponent = new DigitNumberComponent();
+
+    
+
 }
