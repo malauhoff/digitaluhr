@@ -7,10 +7,5 @@ import { DigitNumberComponent } from '../digit-number/digit-number.component';
   styleUrls: ['./clockface.component.css']
 })
 export class ClockfaceComponent {
-    hours: DigitNumberComponent = new DigitNumberComponent();
-    minutes: DigitNumberComponent = new DigitNumberComponent();
-    seconds: DigitNumberComponent = new DigitNumberComponent();
-
-    
 
 }

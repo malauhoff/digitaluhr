@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { timevalue } from '../time-value';
 
 @Component({
   selector: 'app-digit-number',
@@ -6,22 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./digit-number.component.css']
 })
 export class DigitNumberComponent {
-  counter = 0;
-  private _limit!: number;
+  value?: timevalue;
   
   public get limit(): number {
-    return this._limit;
+    return this.value.limit;
   }
   public set limit(value: number) {
-    this._limit = value;
+    this.value.limit = value;
   }
 
   
   public setCounter(value: number) {
-    this.counter = value;
+    this.value.value = value;
   }
 
   public updateCounter() {
-    this.counter++;
+    this.value.value++;
   }
 }
