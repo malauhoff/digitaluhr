@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { timevalue } from '../time-value';
 
 @Component({
@@ -7,7 +7,7 @@ import { timevalue } from '../time-value';
   styleUrls: ['./digit-number.component.css']
 })
 export class DigitNumberComponent {
-  value?: timevalue;
+  @Input() value!: timevalue;
   
   public get limit(): number {
     return this.value.limit;
