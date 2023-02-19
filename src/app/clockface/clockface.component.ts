@@ -7,5 +7,5 @@ import { DigitNumberComponent } from '../digit-number/digit-number.component';
   styleUrls: ['./clockface.component.css']
 })
 export class ClockfaceComponent {
-
+    
 }
